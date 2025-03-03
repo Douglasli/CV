@@ -1,0 +1,129 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{natbib,bibentry}
+
+% Font settings
+\setmainfont{Times New Roman}
+
+% Page layout settings
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+% Header and footer settings
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Curriculum Vitae}}
+\fancyhead[R]{Aoxuan (Douglas) Li}
+\fancyfoot[C]{\thepage}
+
+% Title format
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+% Initialize bibliography
+
+\begin{document}
+
+\nobibliography{cv_bib.bib}
+\bibliographystyle{alpha}
+
+\begin{center}
+    \textbf{\huge Aoxuan (Douglas) Li} \\
+    \vspace{0.5em}
+    \small \href{mailto:douglas.aox.li@gmail.com}{douglas.aox.li@gmail.com} \\
+    \small \textbf{Mobile:} (1) 747-228-2745
+\end{center}
+
+\vspace{1em}
+
+\section*{Education}
+\begin{itemize}[left=0pt, label={}]
+    \item \textbf{PhD in Computer Science} \\
+    IMDEA Software Institute, Dec 2024 – Present
+    \item \textbf{Master of Science in Computer Science} \\
+    University of California, Los Angeles, Sep 2017 – Jun 2019 \\
+    \emph{GPA: 3.81/4.0} \\
+    \textit{Master Thesis: On Explicit Depth Robust Graphs}
+    \item \textbf{Bachelor of Science in Computing} \\
+    Macao Polytechnic Institute, 2013 – 2017 \\
+    \emph{Overall GPA: 3.56/4.0}
+\end{itemize}
+
+\section*{Work Experiences}
+\begin{itemize}[left=0pt, label={}, parsep=0pt]
+    \item \textbf{Cryptographer at Mystiko.Network} \\
+    Nov 2020 – Sep 2024
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+        \item Designed the first auditable web3 zero-knowledge connectivity and privacy base layer.
+    \end{itemize}
+    \item \textbf{Software Engineer at Stealth Software Technologies, Los Angeles} \\
+    July 2019 – July 2020 
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+        \item Designed and developed front-end of cryptography applications. 
+        \item Designed a new Private Set Intersection algorithm. 
+        \item Developed efficient cryptography software using Java.
+    \end{itemize}
+    \item \textbf{Internship as Penetration Tester at Unisguard Technology Ltd, Beijing} \\
+    July 2016 – Aug 2016 
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+        \item Performed formal penetration tests on web-based applications of HengFeng Bank and China Minsheng Bank using Nmap, Sqlmap, Burpsuite on Kali Linux.
+    \end{itemize}
+\end{itemize}
+
+\section*{Professional Experiences}
+\begin{itemize}[left=0pt, label={}, noitemsep]
+    \item \textbf{Visiting Researcher at University of Bologna} \\
+    May 2024 – Aug 2024 
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+        \item Blockchain research advised by Prof. Gabriele D'Angelo.
+    \end{itemize}
+    \item \textbf{Research Assistant at UCLA} \\
+    Jan 2018 – June 2019
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+    \item Cryptography and theoretical computer science research advised by Prof. Rafail Ostrovsky.
+    \end{itemize}
+    \item \textbf{Research Assistant in Cuneiform Digital Library Initiative at UCLA} \\
+    Jan 2018 – March 2019
+    \begin{itemize}[left=0pt,label=\textbullet,topsep=0pt]
+        \item Designed, developed, and maintained a CentOS server and MySQL server containing over 100 nodes and 10TB data. 
+        \item Designed an efficient backup scheme for virtualized servers running on Docker. 
+        \item Designed and implemented a new storage and display framework using CakePHP including machine-readable outputs to enhance information diffusion. 
+    \end{itemize}
+\end{itemize}
+
+\section*{Publications}
+\begin{itemize}[left=0pt]
+    \item \bibentry{li2023implementation}
+    \item \bibentry{tang2023fully}
+    \item \bibentry{li2022auditable}
+    \item \bibentry{li2022modelling}
+    \item \bibentry{serena2022simulation}
+    \item \bibentry{li2022data}
+    \item \bibentry{li2019explicit}
+    \item \bibentry{tse2017detection}
+\end{itemize}
+
+\section*{Languages}
+\begin{itemize}[left=0pt, label=\textbullet]
+    \item Mandarin Chinese (mother tongue)
+    \item English (fluent in speaking and writing)
+    \item Basic Cantonese
+\end{itemize}
+
+\section*{Technology Skills and Competences}
+\begin{itemize}[left=0pt, label={}]
+    \item \textbf{Programming Languages:} Python, Java, \LaTeX
+    \item \textbf{Skills:} Cryptography, Information security
+\end{itemize}
+
+\section*{Teaching Activities}
+\begin{itemize}[left=0pt, label=\textbullet]
+    \item Teaching Assistant of Security and Cryptography at Macao Polytechnic University 
+    \item Teaching Assistant of Optimization Methods at Macao Polytechnic University
+\end{itemize}
+
+\end{document}
